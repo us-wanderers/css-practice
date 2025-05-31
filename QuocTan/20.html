@@ -1,84 +1,45 @@
-<div id = "e2"></div>
-<div id = "e1"></div>
-<div id = "c1a"></div>
-<div id = "c1b"></div>
-<div id = "c1c"></div>
-<div id = "c1d"></div>
-<div id = "c2a"></div>
-<div id = "c2b"></div>
-
+<div></div>
 <style>
   body{
     background-color: #62306D;
+    &::before{
+      content: "";
+      position: fixed;
+      top: 80px;
+      left: 80px;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      background: #62306D;
+      box-shadow: 200px 0 #62306D, 0 100px #62306D, 200px 100px #62306D;
+      z-index:1;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 230px;
+      width: 20px;
+      border-radius: 100%;
+      height: 20px;
+      background: #62306D;
+      box-shadow: 0 100px #62306D;
+    }
   }
-  #e1 {
+  div {
     position: absolute;
     top: 100px;
     left: 100px;
     width: 140px;
     height: 100px;
     background: #F7EC7D;
-  }
-  #e2 {
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 200px;
-    height: 100px;
-    background: #E38F66;
-  }
-  #c1a{
-    position: absolute;
-    top: 80px;
-    left: 80px;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    background: #62306D;
-  }
-  #c1b{
-    position: absolute;
-    top: 80px;
-    left: 280px;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    background: #62306D;
-  }
-  #c1c{
-    position: absolute;
-    top: 180px;
-    left: 80px;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    background: #62306D;
-  }
-  #c1d{
-    position: absolute;
-    top: 180px;
-    left: 280px;
-    width: 40px;
-    border-radius: 100%;
-    height: 40px;
-    background: #62306D;
-  }
-  #c2a{
-    position: absolute;
-    top: 90px;
-    left: 230px;
-    width: 20px;
-    border-radius: 100%;
-    height: 20px;
-    background: #62306D;
-  }
-  #c2b{
-    position: absolute;
-    top: 190px;
-    left: 230px;
-    width: 20px;
-    border-radius: 100%;
-    height: 20px;
-    background: #62306D;
+    &::before{
+      position: absolute;
+      left: 140px;
+      content: '';
+      width: 60px;
+      height: 100px;
+      background: #E38F66;
+    }
   }
 </style>
