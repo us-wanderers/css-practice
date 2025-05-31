@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="col-1">
+        <div class="col"></div>
+      <div class="round">
+            <div class="sub-round"></div>
+          </div>
+    </div>
+    <div class="col-2">
+        <div class="col"></div>
+        <div class="round">
+            <div class="sub-round"></div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="col"></div>
+        <div class="round">
+            <div class="sub-round"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #62306D;
+        margin: 0;
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        width: 75%;
+        height: 85%;
+        left: 12.5%;
+        bottom: 0;
+
+        display: flex;               /* Bật flexbox */
+        flex-direction: row;         /* 👈 Xếp theo hàng ngang */
+    }
+    .col-1 .col-2 .col-3 {
+        position: absolute;
+    }
+
+    .round {
+        position: absolute;
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%
+    }
+  
+    .col-1 .col {
+        position: absolute;
+        background-color: #F7EC7D;
+        width: 100px;
+        height: 100px;
+        bottom: 0;
+      
+    }
+
+    .col-2 .col {
+        position: absolute;
+        background-color: #F7EC7D;
+        width: 100px;
+        height: 200px;
+        bottom: 0;
+        left: 100px
+    }
+
+    .col-3 .col{
+        position: absolute;
+        background-color: #F7EC7D;
+        width: 100px;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .col-1 .round {
+        top: 100px;
+        background-color: #AA445F;
+    }
+    .col-2 .round {
+        left: 100;
+        background-color: #E38F66;
+    }
+    .col-3 .round {
+        right: 0;
+        top: 100px;
+        background-color: #AA445F;
+    }
+
+    .sub-round {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 20px;
+        top: 20px;
+    }
+
+    .col-1 .sub-round {
+        background-color: #E38F66;
+    }
+    .col-2 .sub-round {
+        background-color: #AA445F;
+    }
+    .col-3 .sub-round {
+        background-color: #E38F66;
+    }
+
+</style>
