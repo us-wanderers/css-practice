@@ -1,0 +1,87 @@
+<div class = "rec1">
+	<div class = "c1">
+	  <div class = "c"> </div>
+	</div>
+  </div>
+  
+  <div class = "rec2">
+	<div class = "c1">
+	  <div class = "c"> </div>
+	</div>
+  </div>
+  
+  <div class = "rec3">
+	<div class = "c1">
+	  <div class = "c"> </div>
+	</div>
+  </div>
+  
+  <div class = "c2"></div>
+  <div class = "c3"></div>
+  <style>
+	body {
+		background: #62306D;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	.rec1{
+	  position: absolute;
+	  width: 100px;
+	  height: 100px;
+	  background-color: #F7EC7D;
+	  top: 200px;
+	  left: 50px; 
+	  z-index: 0;
+	}
+	.rec2{
+	  position: absolute;
+	  width: 100px;
+	  height: 200px;
+	  background-color: #F7EC7D;
+	  top: 100px;
+	  left: 150px; 
+	  z-index: 0;
+	}
+	.rec3{
+	  position: absolute;
+	  width: 100px;
+	  height: 100px;
+	  background-color: #F7EC7D;
+	  top: 200px;
+	  left: 250px; 
+	  z-index: 0;
+	}
+	.c1 {
+	  position: absolute;
+	  width: 100px;
+	  height: 100px;
+	  background-color: #AA445F;
+	  bottom: 50px;
+	  border-radius: 100%;
+	  z-index: 1;
+	}
+	.c {
+	  position: absolute;
+	  width: 60px;
+	  height: 60px;
+	  background-color: #E38F66;
+	  bottom: 20%;
+	  left: 20%;
+	  border-radius: 100%;
+	  z-index: 1;
+	}
+  
+	.rec2 .c1 {
+	  background-color: #E38F66;
+	  bottom: 150px;
+	}
+  
+	.rec2 .c1 .c {
+		background-color: #AA445F;
+	  }
+	
+	
+  </style>
+  
+  
