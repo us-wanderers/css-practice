@@ -1,0 +1,63 @@
+<div class="component1"></div>
+<div class="component2"></div>
+<style>
+  body {
+    margin: 0; 
+    background-color: #62306D;
+  }
+  .component1 {
+    width: 300px;
+    height: 100px;
+    background: #F7EC7D;
+    position: absolute; 
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+    .component1::after {
+    content: ""; 
+    width: 100px; 
+    height: 100px; 
+    position: absolute; 
+    background-color: #F7EC7D; 
+    bottom: 100px; 
+    left: 100px; 
+  }
+
+  .component2 {
+    width: 60px; 
+    height: 60px; 
+    position: absolute; 
+    background-color: #AA445F; 
+    outline: 20px solid #E38F66; 
+    border-radius: 100px; 
+    left: 170px; 
+    bottom: 170px;
+  }
+
+    .component2::before {
+    content: ""; 
+    width: 60px; 
+    height: 60px; 
+    position: absolute; 
+    background-color: #E38F66; 
+    outline: 20px solid #AA445F; 
+    border-radius: 100px; 
+    left: -100px; 
+    bottom: -100px;
+  }
+
+  .component2::after {
+    content: "";
+    width: 60px; 
+    height: 60px; 
+    position: absolute; 
+    background-color: #E38F66; 
+    outline: 20px solid #AA445F; 
+    border-radius: 100px; 
+    left: 100px; 
+    bottom: -100px;
+  }
+  
+</style>

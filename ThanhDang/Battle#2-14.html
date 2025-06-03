@@ -1,0 +1,33 @@
+<div></div>
+<style>
+  body {
+    background-color: #F2F2B6; 
+    margin: 0; 
+  }
+  div {
+    position: relative;
+    margin: 85px 0 0 60px; 
+  }
+  
+  div::before, div::after{
+    content: ''; 
+    position: absolute; 
+    border: 75px solid transparent; 
+  }
+
+  div::before {
+    border-top: 130px solid #FF6D00; 
+    border-bottom: 0; 
+    filter: drop-shadow(20px 0 0 #FD4602);
+  }
+
+  div::after {
+    border-bottom: 130px solid #FD4602; 
+    border-up: 0; 
+    filter: drop-shadow(20px 0 0 #FF6D00);
+    left: 110px; 
+    bottom: -130px; 
+  }
+
+  
+</style>
